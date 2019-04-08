@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/dialog.schema.json",
+  "activities": [
+    {
+      "delay": 0,
+      "type": "display",
+      "typing": true
+    }
+  ],
+  "channelsActivities": {
+    "test": {
+      "IsReplacingAll": false,
+      "replacingActivities": [
+        {
+          "delay": ,
+
+        }
+      ],
+      "alternateActivities": {
+        "": {
+          "delay": 0
+        }
+      }
+    }
+  }
+}

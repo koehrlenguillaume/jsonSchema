@@ -35,6 +35,15 @@
             }
           }
         },
+        "if": {
+          "properties": { "IsReplacingAll": { "const": true } }
+        },
+        "then": {
+          "required": ["replacingActivities"]
+        },
+        "else": {
+          "required": ["alternateActivities"]
+        },
         "required": ["IsReplacingAll"]
       }
     }
