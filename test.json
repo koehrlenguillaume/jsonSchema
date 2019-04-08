@@ -1,3 +1,9 @@
 {
-  "$ref": "http://example.com/product.schema.json"
+  "$schema": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/dialog.schema.json",
+  "activities": [
+    {
+      "delay": 0,
+      "type": "display"
+    }
+  ]
 }
