@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/answer.schema.json",
+  "$id": "https://tdustorage.blob.core.windows.net/schema/answer.schema.json",
   "title": "Answer",
   "description": "Prompt option answer",
   "type": "object",

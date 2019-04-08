@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/dialog.schema.json",
+  "$id": "https://tdustorage.blob.core.windows.net/schema/dialog.schema.json",
   "title": "Dialog",
   "description": "object containing all dialog activities",
   "type": "object",
@@ -9,7 +9,7 @@
       "description": "Default activities",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
+        "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
       },
       "minItems": 1
     },
@@ -26,7 +26,7 @@
             "description": "Array of activities replacing all default activities",
             "type": "array",
             "items": {
-              "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
+              "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
             }
           },
           "alternateActivities": {
@@ -34,7 +34,7 @@
             "additionalProperties": {
               "description": "Each key represent one or more channel id splitted by ;",
               "type": "object",
-              "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
+              "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
             }
           }
         },
