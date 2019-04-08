@@ -14,6 +14,7 @@
       "minItems": 1
     },
     "channelsActivities": {
+      "description": "Data specific to defined channels",
       "type": "object",
       "additionalProperties": {
         "type": "object",
@@ -22,14 +23,14 @@
             "type": "boolean"
           },
           "replacingActivities": {
-            "description": "Replacing default activities",
+            "description": "Array of activities replacing all default activities",
             "type": "array",
             "items": {
               "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
             }
           },
           "alternateActivities": {
-            "description": "Dictionnary of activity that replace default one",
+            "description": "Dictionnary of activity that replace defined activity by their id",
             "additionalProperties": {
               "description": "Each key represent one or more channel id splitted by ;",
               "type": "object",

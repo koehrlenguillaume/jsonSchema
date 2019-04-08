@@ -6,36 +6,45 @@
   "type": "object",
   "properties": {
     "id": {
+      "description": "Unique id in the activity array. Used to provide alternate activity",
       "type": "string"
     },
     "delay": {
+      "description": "Delay before running this activity",
       "type": "number",
       "minimum": 0
     },
     "typing": {
+      "description": "Show or not the typing activity",
       "type": "boolean"
     },
     "type": {
+      "description": "Type of the activity",
       "type": "string",
       "enum": ["display", "prompt", "redirect"]
     },
     "activity": {
+      "description": "Activity to show (Type: display)",
       "type": "object"
     },
     "promptType": {
+      "description": "Prompt type expected by the bot (Type: prompt)",
       "type": "string",
       "enum": ["text", "number", "date", "choice", "boolean"]
     },
     "promptOptions": {
+      "description": "Prompt show to the user (Type: prompt)",
       "type": "object"
     },
     "answers": {
+      "description": "Possible user's answers (Type: prompt)",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/answer.schema.json"
       }
     },
     "nextDialog": {
+      "description": "Name of the following dialog (Type: redirect). Ex: d_1_1_000",
       "type": "string"
     }
   },

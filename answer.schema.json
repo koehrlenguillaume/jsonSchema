@@ -6,9 +6,13 @@
   "type": "object",
   "properties": {
     "dialog": {
+      "description": "Name of the dialog to redirect to. Ex: d_1_1_000",
       "type": "string"
     },
-    "answer": {}
+    "answer": {
+      "description": "Answer value",
+      "type": "string"
+    }
   },
   "required": ["dialog", "answer"]
 }
