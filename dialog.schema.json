@@ -31,6 +31,78 @@
           },
           "alternateActivities": {
             "description": "Dictionnary of activity that replace defined activity by their id",
+            "properties": {
+              "facebook": {
+                "description": "Alternate activities for facebook channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "skype": {
+                "description": "Alternate activities for skype channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "msteams": {
+                "description": "Alternate activities for msteams channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "telegram": {
+                "description": "Alternate activities for telegram channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "kik": {
+                "description": "Alternate activities for kik channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "email": {
+                "description": "Alternate activities for email channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "slack": {
+                "description": "Alternate activities for slack channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "groupme": {
+                "description": "Alternate activities for groupme channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "sms": {
+                "description": "Alternate activities for sms channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "emulator": {
+                "description": "Alternate activities for emulator channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "directline": {
+                "description": "Alternate activities for directline channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "webchat": {
+                "description": "Alternate activities for webchat channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "console": {
+                "description": "Alternate activities for console channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              },
+              "cortana": {
+                "description": "Alternate activities for cortana channel",
+                "type": "object",
+                "$ref": "https://tdustorage.blob.core.windows.net/schema/activity.schema.json"
+              }
+            },
             "additionalProperties": {
               "description": "Each key represent one or more channel id splitted by ;",
               "type": "object",
