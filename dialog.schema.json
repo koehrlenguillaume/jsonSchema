@@ -29,20 +29,13 @@
             }
           },
           "alternateActivities": {
+            "description": "Dictionnary of activity that replace default one",
             "additionalProperties": {
+              "description": "Each key represent one or more channel id splitted by ;",
               "type": "object",
               "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
             }
           }
-        },
-        "if": {
-          "properties": { "IsReplacingAll": { "enum": [true] } }
-        },
-        "then": {
-          "required": ["replacingActivities"]
-        },
-        "else": {
-          "required": ["alternateActivities"]
         },
         "required": ["IsReplacingAll"]
       }

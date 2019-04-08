@@ -9,7 +9,7 @@
   ],
   "channelsActivities": {
     "test": {
-      "IsReplacingAll": false
+      "IsReplacingAll": true
     }
   }
 }

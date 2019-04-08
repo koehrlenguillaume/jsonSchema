@@ -5,6 +5,9 @@
   "description": "Activity object",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string"
+    },
     "delay": {
       "type": "number",
       "minimum": 0
@@ -15,6 +18,25 @@
     "type": {
       "type": "string",
       "enum": ["display", "prompt", "redirect"]
+    },
+    "activity": {
+      "type": "object"
+    },
+    "promptType": {
+      "type": "string",
+      "enum": ["text", "number", "date", "choice", "boolean"]
+    },
+    "promptOptions": {
+      "type": "object"
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/answer.schema.json"
+      }
+    },
+    "nextDialog": {
+      "type": "string"
     }
   },
   "required": ["delay", "typing", "type"]
