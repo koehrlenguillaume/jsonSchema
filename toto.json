@@ -9,18 +9,7 @@
   ],
   "channelsActivities": {
     "test": {
-      "IsReplacingAll": false,
-      "replacingActivities": [
-        {
-          "delay": ,
-
-        }
-      ],
-      "alternateActivities": {
-        "": {
-          "delay": 0
-        }
-      }
+      "IsReplacingAll": false
     }
   }
 }
