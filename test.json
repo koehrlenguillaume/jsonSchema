@@ -3,7 +3,9 @@
   "activities": [
     {
       "delay": 0,
-      "type": "display"
+      "type": "display",
+      "typing": true
     }
-  ]
+  ],
+  "chan"
 }

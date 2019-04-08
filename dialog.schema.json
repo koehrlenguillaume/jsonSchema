@@ -5,6 +5,28 @@
   "description": "object containing all dialog activities",
   "type": "object",
   "properties": {
+    "activities2": {
+      "description": "Default activities",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "delay": {
+            "type": "number",
+            "minimum": 0
+          },
+          "typing": {
+            "type": "boolean"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["display", "prompt", "redirect"]
+          }
+        },
+        "required": ["delay", "typing", "type"]
+      },
+      "minItems": 1
+    },
     "activities": {
       "description": "Default activities",
       "type": "array",
