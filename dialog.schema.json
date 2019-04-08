@@ -5,47 +5,11 @@
   "description": "object containing all dialog activities",
   "type": "object",
   "properties": {
-    "activities2": {
-      "description": "Default activities",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "delay": {
-            "type": "number",
-            "minimum": 0
-          },
-          "typing": {
-            "type": "boolean"
-          },
-          "type": {
-            "type": "string",
-            "enum": ["display", "prompt", "redirect"]
-          }
-        },
-        "required": ["delay", "typing", "type"]
-      },
-      "minItems": 1
-    },
     "activities": {
       "description": "Default activities",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "delay": {
-            "type": "number",
-            "minimum": 0
-          },
-          "typing": {
-            "type": "boolean"
-          },
-          "type": {
-            "type": "string",
-            "enum": ["display", "prompt", "redirect"]
-          }
-        },
-        "required": ["delay", "typing", "type"]
+        "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
       },
       "minItems": 1
     },
@@ -56,6 +20,19 @@
         "properties": {
           "IsReplacingAll": {
             "type": "boolean"
+          },
+          "replacingActivities": {
+            "description": "Replacing default activities",
+            "type": "array",
+            "items": {
+              "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
+            }
+          },
+          "alternateActivities": {
+            "additionalProperties": {
+              "type": "object",
+              "$ref": "https://raw.githubusercontent.com/koehrlenguillaume/jsonSchema/master/activity.schema.json"
+            }
           }
         },
         "required": ["IsReplacingAll"]
