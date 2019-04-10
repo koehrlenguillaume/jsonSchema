@@ -5,6 +5,10 @@
   "description": "object containing all dialog activities",
   "type": "object",
   "properties": {
+    "dialogName": {
+      "description": "Name of the dialog. Ex: d_1_1_000",
+      "type": "string"
+    },
     "activities": {
       "description": "Default activities",
       "type": "array",
@@ -94,5 +98,5 @@
       }
     }
   },
-  "required": ["activities"]
+  "required": ["activities", "dialogName"]
 }
