@@ -21,7 +21,7 @@
     "type": {
       "description": "Type of the activity",
       "type": "string",
-      "enum": ["display", "prompt", "redirect"]
+      "enum": ["display", "prompt", "redirect", "getData"]
     },
     "activity": {
       "description": "Activity to show (Type: display)",
@@ -30,7 +30,18 @@
     "promptType": {
       "description": "Prompt type expected by the bot (Type: prompt)",
       "type": "string",
-      "enum": ["text", "number", "date", "choice", "boolean"]
+      "enum": [
+        "text",
+        "textWithoutValidation",
+        "number",
+        "date",
+        "choice",
+        "boolean"
+      ]
+    },
+    "eventName": {
+      "description": "Name of the event to log data to App Insights",
+      "type": "string"
     },
     "promptOptions": {
       "description": "Prompt show to the user (Type: prompt)",
